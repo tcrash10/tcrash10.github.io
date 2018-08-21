@@ -37,19 +37,19 @@ var i = 0;
 var timer = 6000;
 
 var imgArray = [
-  {"source":"Images/katy-belcher-557477-unsplash.jpg", 
+  {"source":"images/katy-belcher-557477-unsplash.jpg", 
   "alt":"Urban Art", 
   "title":"Photo by Katy Belcher on Unsplash"}, 
-  {"source":"Images/rawpixel-653764-unsplash.jpg", 
+  {"source":"images/rawpixel-653764-unsplash.jpg", 
   "alt":"Teamwork in the office", 
   "title":"Photo by rawpixel on Unsplash"}, 
-  {"source":"Images/sds300.jpg", 
+  {"source":"images/sds300.jpg", 
   "alt":"Man and Woman beside mainframe computer", 
   "title":"Man and Woman beside mainframe computer"}, 
-  {"source":"Images/luke-porter-581054-unsplash.jpg", 
+  {"source":"images/luke-porter-581054-unsplash.jpg", 
   "alt":"Man hiking in snowy forest", 
   "title":"Photo by Luke Porter on Unsplash"}, 
-  {"source":"Images/markus-spiske-518966-unsplash.jpg", 
+  {"source":"images/markus-spiske-518966-unsplash.jpg", 
   "alt":"Computer code filling terminal screen", 
   "title":"Photo by Markus Spiske on Unsplash"}
 ];

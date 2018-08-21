@@ -60,6 +60,9 @@ header,
 footer {
   background: #2B2D42;
   color: #8D99AE;
+  margin-top: 12rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 header {
@@ -89,17 +92,6 @@ header h2 {
 }
 
 /* footer only */
-footer {
-  background: gray;
-  color: white;
-  margin-top: 12rem;
-  padding: 1rem;
-  text-align: center;
-}
-
-footer a {
-  color: black;
-}
 
 .contact-info a {
     background: black;

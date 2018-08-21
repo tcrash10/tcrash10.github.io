@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+<link href="_css/styles_retro.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" title="TC Project">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="intro.html" title="TC Intro">Intro Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="trivia.html" title="TC Trivia">Trivia Page</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="resume.html">TC Resume</a>
+          <a class="dropdown-item" href="#">Disabled</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Disabled</a>
+        </div>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>    
+
+<div class="mainBody">   
+<div id="header">
+  
+  <h1> <i class="fa fa-hourglass-start" aria-hidden="true"></i><span id="header-text">1970s 1980s </span>
+  <i class="fa fa-hourglass-half" aria-hidden="true"></i></h1>
+</div>
+    
+<!-- Analog Clock sb right -->
+<div class="clocksidebar">
+  <div id="time"></div><br>
+
+  <div id="clock">
+    <div class="num num1"><div>1</div></div>  
+    <div class="num num2"><div>2</div></div>
+    <div class="num num3"><div>3</div></div>  
+    <div class="num num4"><div>4</div></div>
+    <div class="num num5"><div>5</div></div>
+    <div class="num num6"><div>6</div></div>
+    <div class="num num7"><div>7</div></div>  
+    <div class="num num8"><div>8</div></div>
+    <div class="num num9"><div>9</div></div>  
+    <div class="num num10"><div>10</div></div>
+    <div class="num num11"><div>11</div></div>  
+    <div class="num num12"><div>12</div></div>
+
+    <div id="hr-hand"></div>
+    <div id="min-hand"></div>
+    <div id="sec-hand"></div>
+      
+  </div>
+</div>
+ 
+<!--  Image sb right    -->
+<div>
+  <!-- <img src="https://source.unsplash.com/random/300x300/?nature,water" caption="random" alt="unsplash random img"
+  
+      title="unsplash random"> -->
+  <img class="imagesidebar" src="https://source.unsplash.com/random/300x300/?nature" 
+    caption="random" alt="unsplash random img" title="unsplash random nature">
+
+</div>
+
+<div class="container">
+  <div class="topRow">
+    <div class="cat">
+      <img src="images/003-cat.png" alt="happy cat" title="cat image from freepik"><span id="cat">00</span>
+    </div>
+    <div class="dog">
+      <span id="dog">00</span><img src="images/dog.png" alt="jolly dog" title="dog image from freepik">
+    </div>
+  </div>
+
+  <div class="game">
+  <canvas id="myCanvas" width="260" height="260"></canvas>
+  </div>
+
+  <div class="lowRow">
+    <div class="summary">
+     <span id="sum">15 win by 2</span>
+    </div>
+
+    <div class="user">
+      <a href="#" class="button" id="stop">Stop Game</a>
+    </div>
+  </div>
+
+  <div>
+    <span></span>
+    <span id="cat-Winners">Morris and Benji battle for </span>
+    <span> wins.</span>
+  </div>
+</div>
+
+<!-- Main Area   -->     
+<div class="main">
+  <h2> Cold War, Warm(ing) Computers</h2>
+    <p>
+        While the Soviet Union and it's satellite countries fumed and the Occident free-market countries growled back, an extrodinary information age was blooming. In the 1970s, computer science meant large mainframes in even larger data centers. The typical 1970 IBM mainframe had 500 KB of RAM, 233 megabytes of hard disk space in a strickly controlled (cooled) environment. Today, the smartphone is at least 1,000 times faster, and the most basic iPhone can store 80 times the data (and much cheaper than the approximately $6 million price tag). 
+    </p>
+    
+    <p>
+        I was a teenager ignoring most of this. Rather, I enjoyed baseball (and other sports), roamed freely the neighborhood with my friends, and did fairly well at school. Growing up in Robbinsdale (just north of Minneapolis) was mostly fun. My family and I watched Welcome Back Kotter &amp; Kung Fu on <i>the</i> television, ate McDonald's debut breakfast service, and played football in the snow. I had it good.
+    </p>
+</div>   
+    
+<div class="main main2">
+    <div id="imgContainer">
+      <div id="imageDiv">
+        <img id="mainImage" src="images/4865516413_c5d10721a0_o.png"><br>
+      </div>
+      <div id="captionDiv">
+        <h2 id="captionHead"> Packman was invented in 1980 by Toru Iwatani.</h2>
+          <p id="captionText">We didn't have PCs or smartphones so
+            we played it arcade style at hosting businesses such as pubs and shopping malls. I
+            can remember a sore wrist from frantically tugging too hard in attempts to reach
+            a high score.</p>
+      </div>
+    </div>
+  <div id="images" onclick="changeImage(event)">    
+    
+    <img class="retroimg" id="0" src="images/4865516413_c5d10721a0_o.png" alt="Pacman" 
+         title="Methodshop.com Pacman on Flickr">
+    <img class="retroimg" id="1" src="images/4195885445_494512b943_z.jpg" alt="Rockem Sockem Robots"
+          title="Ariel Waldman on Flickr: Rockem Sockem Robots">
+    <img class="retroimg" id="2" src="images/Newhart_show_cast_1977.JPG" alt="BobNewhart Show"
+          title="https://commons.wikimedia.org/wiki/File:Newhart_show_cast_1977.JPG">
+    <img class="retroimg" id="3" src="images/FourPresidents198522.jpg" alt="Reagan and Oneill"
+          title="https://commons.wikimedia.Four_Presidents_(Reagan,_Carter,_Ford,_Nixon)_toasting_in_the_Blue_Room.jpg">
+    <img class="retroimg" id="4" src="images/512px-Norman_Borlaug_(2004).jpg" alt="Norman Borlaug"
+         title="https://commons.wikimedia.org/wiki/File:Norman_Borlaug_(2004).jpg">
+    <img class="retroimg" id="5"
+         src="images/Rod_Carew_at_Yankee_Stadium_CROP.jpg" 
+         alt="Rod Carew" title="https://commons.wikimedia.org/wiki/File:Rod_Carew_at_Yankee_Stadium_CROP.jpg">
+    <img class="retroimg" id="6" src="images/320px-MSH80_eruption_mount_st_helens_05-18-80-dramatic-edit.jpg"
+         alt="Mount Saint Helens 1980 eruption" title="320px-MSH80_eruption_mount_st_helens_05-18-80-dramatic-edit.jpg">
+    <img class="retroimg" id="7" src="images/tracy-thomas-56810-unsplash.jpg"
+         alt="Old TV, recording tapes and vinyl" title="Photo by Tracy Thomas on Unsplash">
+    
+  </div>
+</div>
+</div>
+
+<!-- Footer area   --> 
+<footer role="contentinfo">
+  <p>&copy; <a href="mailto:thomas.s.carter@live.com" title="TomCarter.com" target="_blank">thomas.s.carter@live.com</a> Keep In Touch <a href="https://www.linkedin.com/in/tom-carter-3ba06117/" target="_blank" title="Follow me on LinkedIn">Thomas Carter LinkedIn</a></p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="js/clock-script.js" defer></script>
+<script type="text/javascript" src="js/pong.js"></script>
+</body>
+</html>
+<!-- Photo by Tracy Thomas on Unsplash -->

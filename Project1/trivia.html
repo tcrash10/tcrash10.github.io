@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas Carter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="_css/trivia_styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse fixer" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html" title="TC Project">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="intro.html" title="TC Intro">Intro Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="retro.html" title="TC Retro">Retro Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="trivia.html" title="TC Retro">Trivia Page</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="resume.html">TC Resume</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>    
+
+<main class="container">
+
+<div class="main hide quiz">
+  
+  <div class="questions">
+    <h4 id="q_wrap">
+        
+    </h4>
+
+    <dl id="listed">
+      <dt class="ans" id="0"> </dt> 
+      <dt class="ans" id="1"> </dt>
+      <dt class="ans" id="2"> </dt>
+      <dt class="ans" id="3"> </dt>
+    </dl>
+  </div>
+
+  <div class="info">   
+    
+    <div id="tabs">  
+          <dl >
+              <dt > Correct = 0 </dt>
+              <dt > Wrong = 0 </dt>           
+          </dl> 
+    </div>
+    
+    <div >
+      <a href="#0" class="button" id="next">Next Question</a>
+    </div>
+    
+  </div>
+  
+  <div class="helpers">
+
+      <h3>Helpers:</h3>
+      <div class="fiftyFifty">
+        <img src="images/abacus.png" title="Icon made by Freepik from www.flaticon.com">
+        <span>Take away 2 wrong choices. 1 per quiz.</span>
+        <button class="btn btn-secondary btn-sm">50/50</button>
+      </div>
+
+      <div class="askFriend">
+        <img src="images/girl.png" title="Icon made by Freepik from www.flaticon.com">
+        <span class="friend_text"><br></span>
+         <span class="friend">Friendly advice from Sumiko. 1/quiz.</span>
+        <button class="btn btn-secondary btn-sm">Ask Friend</button>
+        
+      </div>
+
+  </div>
+  
+
+</div>
+
+<div class="main quiz_intro">
+  <div class="quizes">
+    <h2>
+        Here are the available history quizes
+    </h2>
+
+    <dl class="quiz_list">
+      <li><i class="fas fa-graduation-cap"></i>
+        <a href="#0" class="q_list" id="0">History Quiz One</a>
+      </li>
+        <li><i class="fas fa-graduation-cap"></i>
+        <a href="#0" class="q_list" id="1">History Quiz Two</a>
+      </li>
+      </li>
+        <li><i class="fas fa-graduation-cap"></i>
+        <a href="#0" class="q_list" id="2">History Quiz Three</a>
+      </li>
+      </li>
+        <li><i class="fas fa-graduation-cap"></i>
+        <a href="#0" class="q_list" id="3">History Quiz Four: Who Said</a>
+      </li>
+      </li>
+        <li><i class="fas fa-graduation-cap"></i>
+        <a href="#0" class="q_list" id="4">History Quiz Five: What Year</a>
+      </li>
+      </li>
+        <li><i class="fas fa-graduation-cap"></i>
+        <a href="#0" class="q_list" id="5">History Quiz Six</a>
+      </li>
+    </dl>
+
+  </div>
+
+</div>
+
+<div class="main hide quiz_summary">
+  <div class="summary">
+    <img id="finalImage" src="images/albert-einstein-11282050865o83h.jpg" title="Einstein" alt="Albert Einstein Photo">
+
+    <h2 id="final">
+        Your final score goes here
+    </h2>
+
+    <div >
+      <a href="#0" class="button" id="quiz_list">Quiz List</a>
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; <a href="mailto:thomas.s.carter@live.com" title="TomCarter.com" target="_blank">thomas.s.carter@live.com</a> Keep In Touch <a href="https://www.linkedin.com/in/tom-carter-3ba06117/" target="_blank" title="Follow me on LinkedIn">Thomas Carter LinkedIn</a></p>
+</footer>
+
+<script
+   src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script src="js/triv-qvars.js" defer></script> 
+<script src="js/triv-script.js" defer></script> 
+</body>
+</html>
+<!-- <div id="hed">
+<img class="RMassie" title="Robert Massie" src="https://images.gr-assets.com/authors/1321494482p5/40882.jpg" height="100%" alt="Massie" cap="Think...">
+ <p><span> Think Carefully...</span></p><h2>History Quiz Page One</h2>    
+</div>  -->

@@ -1,0 +1,266 @@
+/*********** Global Settings ***********/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background: url("../images/pexels-photo-316466.jpeg");
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 44;
+}
+
+/* Navigation */
+.nav-wrap,.main-nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+@supports (display: grid) {
+.main-nav ul{
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropcont {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Links inside the dropdown */
+.dropcont a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropcont {
+  display: block;
+}
+.main-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  background: aqua;
+  color: black;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+.main-nav a:hover {
+  background: black;
+  color: purple;
+}
+
+.box1 > img {
+    height: 220px;
+    width: 280px;
+    border-radius: 0 10px 10px 0;
+    opacity: .8;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+  .box1 {
+    height: 220px;
+    width: 280px;
+    border: 1px solid black;
+    
+}
+  .box2 {
+    overflow: hidden;
+    /*background: blue;*/
+    height: 160px;
+    width: 280px;
+    opacity: .8;
+    padding: 60px 0 0 20px;
+    line-height: 1.2em;
+    font-family: 'Cabin', sans-serif;
+    font-style: italic;
+    font-size: 1.2em;
+  } 
+
+.h21 {
+  margin-left: 100%;
+  width: 300%;
+  white-space: nowrap;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+
+.h22 {
+  margin-left: 100%;
+  width: 300%;
+  white-space: nowrap;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+
+.h23 {
+  margin-left: 100%;
+  width: 300%;
+  white-space: nowrap;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+}
+
+footer {
+  background: gray;
+  color: white;
+  margin-top: 12rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*.stuff {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin-right: 10%;
+  border: 2px solid orange;
+  
+}
+
+#montague {
+  width: 100%;
+  height: auto;
+  border: solid 2px red;
+}
+*/
+/* Media Queries */
+@media(max-width: 768px) {
+  
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid blue;*/
+  }
+
+  .box1, .box2 {
+    width: 280px;
+    height: 220px;
+    }
+
+  .box2 {
+    padding: 0 0 0 20px;
+    width: 260px;
+  }
+
+  .h21 {
+    white-space: nowrap;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+  }
+
+  .h22 {
+    white-space: nowrap;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+  }
+
+  .h23 {
+    white-space: nowrap;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+  }
+
+
+  /*.stuff {
+    display: flex;
+    margin-top: 230px;
+  }*/
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}  
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .8;
+  }
+}
+ /*overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /*border-right: .15em solid orange;  The typwriter cursor */
+  /*white-space: nowrap; Keeps the content on a single line */
+  /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .03em; Adjust as needed 
+  animation: 
+    typing 2.0s steps(40, end),
+    blink-caret .15s step-end infinite;
+    animation-delay: 1s;
+}
+
+ The typing effect 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect 
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  
+} */
+/*50% { border-color: orange; }*/*/

@@ -90,8 +90,17 @@ header h2 {
 
 /* footer only */
 footer {
-    text-align: center;
+  background: gray;
+  color: white;
+  margin-top: 12rem;
+  padding: 1rem;
+  text-align: center;
 }
+
+footer a {
+  color: black;
+}
+
 .contact-info a {
     background: black;
     padding: 30px;

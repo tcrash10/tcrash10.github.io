@@ -77,7 +77,7 @@ body {
     clear: right;
 }*/
 #imgContainer {
-    min-height: 480px;
+    min-height: 500px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -92,7 +92,7 @@ body {
 
 .main2 {
   color: white;
-  background-image: url("../images/abstract-antique-background-168453.jpg");
+  background-image: url("../Images/abstract-antique-background-168453.jpg");
 }
 
 #imageDiv {

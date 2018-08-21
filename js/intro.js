@@ -1,3 +1,4 @@
+// toggle panels
 var tabLinks;
 var tabPanels;
  
@@ -31,9 +32,6 @@ function displayPanel(tabToActivate) {
 
 var i = 0;
 
-// var imgArray = ["Images/katy-belcher-557477-unsplash.jpg",
-//  "Images/rawpixel-653764-unsplash.jpg", "Images/sds300.jpg", "Images/luke-porter-581054-unsplash.jpg",
-//  "Images/markus-spiske-518966-unsplash.jpg"];
 var timer = 6000;
 
 var imgArray = [

@@ -1,0 +1,415 @@
+/*********** Global Settings ***********/
+body {
+	background-color: #9c9f84; 
+	margin: 0px;
+    font-family: Verdana, Georgia, serif;
+    font-size: 12px
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: #5c755e;
+    margin: 10px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+#navbar {
+    background-color: #5c755e;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.main {
+    background-color: #e5e4d7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 320px;
+    margin-left: 10px;
+    padding: 15px;
+    /*font-size: 105%;*/
+    border-radius: 5px;
+}
+
+#header > h1 {
+    font-size: 2.5rem;
+    color: #ce282e;
+    text-align: center;
+    padding-top: .5em;
+}
+
+#header-text {
+    padding: 0 1em;
+}
+
+.sideright {
+    background-color: #e5e4d7;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 105%;
+    border-radius: 5px;
+    float: right;
+    width: 260px;
+    clear: right;
+}
+.clocksidebar, .imagesidebar, .container {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    float: right;
+    width: 300px;
+    clear: right;
+}
+/*.imagesidebar {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    float: right;
+    width: 300px;
+    clear: right;
+}*/
+#imgContainer {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainImage {
+  width: 70%;
+  min-width: 100px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.main2 {
+  color: white;
+  background-image: url("../Images/abstract-antique-background-168453.jpg");
+}
+
+#imageDiv {
+  flex: 1 1 0%;
+}
+
+#captionDiv {
+  flex: 1 1 0%;                  
+}
+
+#captionText {
+    padding-top: 2em;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.retroimg {
+    height: 50px;
+    width: 60px;
+    filter: blur(1px);
+    border: 3px solid grey;
+}
+
+:root {
+    --size: 200px;
+}
+
+/*clock decoration styling*/
+#clock {
+  display: none;
+}
+
+@supports (transform: rotate(30deg)) {
+#clock {
+    width: var(--size);
+    height: var(--size);
+    display: block;
+    margin-left: 50px;
+    background-color: #ccc;
+    border: 3px solid #000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 block;
+    position: relative;
+}
+
+.num {
+    height: 100%;
+    position: absolute;
+    left: calc(50% - 0.5em);
+}
+
+.num div {
+    width: 1em;
+    line-height: 2em;
+    color: brown;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.num1 {
+    transform: rotate(30deg);
+ }
+
+.num1 div {
+    transform: rotate(-30deg);
+}
+.num2 {
+    transform: rotate(60deg);
+ }
+
+.num2 div {
+    transform: rotate(-60deg);
+}
+.num3 {
+    transform: rotate(90deg);
+ }
+
+.num3 div {
+    transform: rotate(-90deg);
+}
+.num4 {
+    transform: rotate(120deg);
+ }
+
+.num4 div {
+    transform: rotate(-120deg);
+}
+.num5 {
+    transform: rotate(150deg);
+ }
+
+.num5 div {
+    transform: rotate(-150deg);
+}
+.num6 {
+    transform: rotate(180deg);
+ }
+
+.num6 div {
+    transform: rotate(-180deg);
+}
+.num7 {
+    transform: rotate(210deg);
+ }
+
+.num7 div {
+    transform: rotate(-210deg);
+}
+.num8 {
+    transform: rotate(240deg);
+ }
+
+.num8 div {
+    transform: rotate(-240deg);
+}
+.num9 {
+    transform: rotate(270deg);
+ }
+
+.num9 div {
+    transform: rotate(-270deg);
+}
+.num10 {
+    transform: rotate(300deg);
+ }
+
+.num10 div {
+    transform: rotate(-300deg);
+}
+.num11 {
+    transform: rotate(330deg);
+ }
+
+.num11 div {
+    transform: rotate(-330deg);
+}
+.num12 {
+    transform: rotate(360deg);
+ }
+
+.num12 div {
+    transform: rotate(-360deg);
+}
+
+#sec-hand {
+    width: 1px;
+    height: 50%;
+    background-color: black;
+    transform-origin: 50% 80%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    
+}
+
+#min-hand {
+    width: 3px;
+    height: 40%;
+    background-color: blue;
+    transform-origin: 50% 80%;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    margin-left: -1px;
+    
+}
+
+#hr-hand {
+    width: 5px;
+    height: 25%;
+    background-color: red;
+    transform-origin: 50% 80%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -2px;
+}   
+}
+
+/*Pong Game styling*/
+canvas {
+ background: #bbb;
+  display: block;
+   margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.topRow, .lowRow {
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2px;
+}
+    
+.cat { 
+    flex: 1;
+    background: #d1f442; 
+    padding-top: 8px; 
+}
+
+.cat span {
+    text-align: right; 
+    display: inline-block; 
+    margin-left: 50%; 
+}
+
+.dog span {
+    text-align: left;
+    display: inline-block;
+    margin-right: 50%;
+}
+
+.dog {
+  flex: 1;
+  background: #d1f442;
+  text-align: right;
+  padding-top: 8px;
+}
+
+.lowRow {
+    align-items: center;
+    text-align: center;
+    background: gray;
+}
+
+.summary {
+  flex: 1;
+  font-size: .7em;
+  padding-top: 8px;
+}
+
+.user {
+   flex: 1;
+   text-align: center;
+}
+
+.button {
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 3px 6px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 10px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+ }
+
+.button:hover {
+   border-top-color: #889196;
+   background: #889196;
+   color: #9c829c;
+   }
+
+.button:active {
+   border-top-color: #517994;
+   background: #517994;
+}
+
+.game {
+    grid-area: game;
+}
+
+.winner {
+  color: purple;
+  font-size: 1.4em;
+  transition: all .9s;
+}
+
+footer {
+  background: gray;
+  color: white;
+  margin-top: 12rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: black;
+}
+@media(max-width: 500px) {
+
+  .mainBody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #header {
+    height: auto;
+  }
+
+  .main2 {
+    min-width: 100%;
+  }
+
+   /*#mainImage {
+    width: 100px;
+    min-width: 0;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }*/
+}  
+

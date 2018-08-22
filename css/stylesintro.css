@@ -169,6 +169,7 @@ img {
 }
 
  .randomImg {
+  width: 240px;
   grid-area: randomImg;
 }
 
@@ -227,8 +228,8 @@ img {
 }
 
 .tab1>div:hover, .tab2>div:hover, .tab3>div:hover {
-  background-color: #03132d;
-  color: white;
+  color: blue;
+  background-color: white;
   cursor: pointer;
 }
 

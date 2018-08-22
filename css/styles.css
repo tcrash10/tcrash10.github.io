@@ -60,7 +60,7 @@ header,
 footer {
   background: #2B2D42;
   color: #8D99AE;
-  margin-top: 12rem;
+  margin-top: 1rem;
   padding: 1rem;
   text-align: center;
 }
@@ -110,4 +110,24 @@ header h2 {
 ------------------------------------*/
 .education {
   background: #8D99AE;
+}
+
+@media(max-width: 500px) {
+
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .col-narrow {
+    flex: 1;
+    width: 100%;
+  }
+
+  .col-wide {
+    flex: 1;
+    width: 100%;
+  }
+  
 }

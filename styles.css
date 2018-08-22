@@ -1,0 +1,133 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    /*background: orange;
+    font-family: 'Open Sans', sans-serif;
+    font-size:/ .5em;*/
+    margin: 0;
+}
+
+#navbar {
+    background-color: #5c755e;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.col-narrow {
+  width: 35%;
+  float: left;
+  padding-right: 3%;
+  min-height: 175px;
+}
+
+.col-wide {
+  width: 62%;
+  float: left;
+  min-height: 175px;
+}
+
+a {
+  color: #FFFFFF;
+  transition: color border background;
+  transition-delay: .5s;
+/*    transition-timing-function: ease-out;*/
+}
+
+a:hover {
+  color: #99DDDD;
+  text-decoration: none;
+  background: opacity: .8;
+  border: solid 2px purple;
+ }
+
+/* Header & Footer
+------------------------------------*/
+header,
+footer {
+  background: #2B2D42;
+  color: #8D99AE;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+header h1,
+header h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+    color: #EDF2F4;
+}
+
+/* header only */
+.profile-img {
+        border-radius: 50%;
+}
+
+/* footer only */
+
+.contact-info a {
+    background: black;
+    padding: 30px;
+    display: inline-block;
+}
+
+/* Work Experience
+------------------------------------*/
+.work {
+  background: #EDF2F4;
+}
+
+
+/* Education
+------------------------------------*/
+.education {
+  background: #8D99AE;
+}
+
+@media(max-width: 500px) {
+
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .col-narrow {
+    flex: 1;
+    width: 100%;
+  }
+
+  .col-wide {
+    flex: 1;
+    width: 100%;
+  }
+  
+}

@@ -25,9 +25,9 @@ function getRandomInt(min, max) {
   // return Math.floor(Math.random() * (max - min)) + min; 
   return Math.floor(Math.random()*(max-min+1)+min);
 }
-function stopStart() {
-  event.preventDefault();
-  if (el.firstChild.nodeValue == "Stop Game") {
+function stopStart(e) {
+    e.preventDefault();
+    if (el.firstChild.nodeValue == "Stop Game") {
     clearInterval(initInterval);
     console.log(el.firstChild.nodeValue);
     el.firstChild.nodeValue = "Start Game";
@@ -38,7 +38,11 @@ function stopStart() {
   }
 }
 var el = document.getElementById("stop");
-el.addEventListener("click", stopStart, false);
+el.addEventListener("click", function(event) {
+  if (!event) event = window.event;
+  stopStart(event);
+  }
+  , false);
 
 function newBall() {
 if (gameOver) updateScore("reset");

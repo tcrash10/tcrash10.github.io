@@ -66,16 +66,7 @@ body {
     width: 300px;
     clear: right;
 }
-/*.imagesidebar {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    border-radius: 5px;
-    float: right;
-    width: 300px;
-    clear: right;
-}*/
+
 #imgContainer {
     min-height: 480px;
     display: flex;
@@ -360,7 +351,8 @@ canvas {
 .button:hover {
    border-top-color: #889196;
    background: #889196;
-   color: #9c829c;
+   /*color: #9c829c;*/
+   color: white;
    }
 
 .button:active {
@@ -404,12 +396,5 @@ footer a {
     min-width: 100%;
   }
 
-   /*#mainImage {
-    width: 100px;
-    min-width: 0;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-  }*/
 }  
 
